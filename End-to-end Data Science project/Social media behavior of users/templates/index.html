@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Social Media behavior predictor
+{% endblock title %}
+
+
+{% block custom_css %}
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock custom_css %}
+
+
+{% block body %}
+<!-- nav bar -->
+
+<nav class="navbar navbar-expand-lg navbar-light shadow fixed-top" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="/">Social Media behavior predictor</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div>
+    <!-- nav bar ends -->
+
+    <div class="container-fluid masthead">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form method="POST" action="{{ url_for('predict')}}">
+                        <!-- Input block-->
+                        <div class="form-group">
+                            <label for="translation">
+                                <blockquote class="blockquote">
+                                    <p class="mb-2">Enter the details as indicated:</p>
+                                </blockquote>
+                            </label>
+                            <input type = "text" class="form-control" name="Yearly_avg_view_on_travel_page" rows="1"
+                                placeholder="Yearly_avg_view_on_travel_page"></input>
+
+                            <input type = "text" class="form-control" name="total_likes_on_outstation_checkin_given" rows="1"
+                                placeholder="total_likes_on_outstation_checkin_given"></input>
+
+                            <input type = "text" class="form-control" name="total_likes_on_outofstation_checkin_received" rows="1"
+                                placeholder="total_likes_on_outofstation_checkin_received"></input>
+
+                            <input type = "text" class="form-control" name="week_since_last_outstation_checkin" rows="1"
+                                placeholder="week_since_last_outstation_checkin"></input>
+
+                            <input type = "text" class="form-control" name="travelling_network_rating" rows="1" 
+                                placeholder="travelling_network_rating"></input>
+
+                            <input type = "text" class="form-control" name="Adult_flag" rows="1" 
+                                placeholder="Adult_flag"></input>
+                            
+                            <h3>Preferred Device</h3><br><select name="preferred_device" id="fuel" required="required">
+                                    <option value="Mobile">Mobile</option>
+                                    <option value="iOS">iOS</option>
+                                    <option value="Android">Android</option>
+                                    <option value="Tab">Tab</option>
+                                    <option value="Laptop">Laptop</option>
+                                    <option value="Other">Other</option>
+                            </select>
+
+                            <h3>Member in family</h3><br><select name="member_in_family" id="fuel" required="required">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                            </select>
+
+                            <h3>Following company page</h3><br><select name="following_company_page" id="fuel" required="required">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+
+                        <!-- Select output language here. -->
+                        <div class="form-group">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Predict</button></br>
+                        </br>
+                    </form>
+                    <!-- Translated text returned by the Translate API is rendered here. -->
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="form-group">
+                            <label for="translation-result">
+
+                                <blockquote class="blockquote">
+                                    <p class="mb-2">Prediction:</p>
+                                </blockquote>
+
+                            </label>
+                            <textarea readonly class="form-control" id="exTextarea" rows="5">{{ prediction_text }}</textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        {% endblock body %}
+
+        {% block custom_js %}
+        <!-- Custom JS -->
+        <script src="{{ url_for('static', filename='script/index.js') }}"></script>
+        {% endblock custom_js %}
