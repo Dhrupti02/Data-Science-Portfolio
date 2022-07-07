@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:wheat">
+        <form action="{{ url_for('login')}}" method="post">
+            <h2>Ask questions</h2>
+        
+            
+            <h3>1. Which country has the highest medals?</h3>
+            <h3>2. How many females and males have played?</h3>
+            <h3>3. Where was olampyic held in 2008?</h3>
+            <h3>4. Who won women silver in Mexico?</h3>
+            <h3>5. How many prizes awarded in 2012?</h3>
+            <h3>6. Find top N countries for bronze</h3>
+            <h3>7. Find top N countries for silver</h3>
+            <h3>8. Find top N countries for gold</h3>
+            <h3>9. Find top N countries in the year 2012</h3><br>
+            
+            <h2> Enter your choice </h2>
+            <input type = "Text", id="fourth" name="choice" required="required">
+            
+            <br><br><button id="sub" type="submit ">Enter your choice</button>
+            <br>
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+        <img src="data:image/png;base64, {{ plot_url }}">
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
