@@ -1,0 +1,88 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May 11 00:41:46 2022
+
+@author: DHRUPTI PATEL
+"""
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:wheat">
+        <form action="{{ url_for('login')}}" method="post">
+            <h2>Ask questions</h2>
+            
+            <h3>1. Cities with prices</h3>
+            <h3>2. Cities by states</h3>
+            <h3>3. Minimum prices of cities</h3>
+            <h3>4. Maximum prices of cities</h3>
+            <h2> Enter your choice </h2>
+            <input type = "Text", id="fourth" name="choice"><br><br>
+            
+            <br><br><button id="sub" type="submit ">Enter your choice</button>
+            <br>
+         </form><br><br>
+        
+        <br><br><h3>{{ prediction_text }}<h3><br><br>
+        <table>
+            <thead>
+                <tr>
+                <th>Key</th>
+                <th>Value</th>
+                </tr>
+            </thead>
+        <tbody>
+            {% for key, value in minmm.items() %}
+                <tr>
+                    <td> {{ key }} </td>
+                    <td> {{ value }} </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+         
+        <img src="data:image/png;base64, {{ plot_url }}">
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
