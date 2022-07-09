@@ -33,7 +33,7 @@ Machine learning is a field concerned with building machine learning algorithms 
 
 ### Logistic regression:
 
--	When the dependent or output variable is categorical, it called a classification problem. Regression model can be used for classification problem. Usually, it is called logistic regression. The formula for logistic regression is:
+-	When the dependent or output variable is categorical, it is called a classification problem. Regression model can be used for classification problem. Usually, it is called logistic regression. The formula for logistic regression is:
 ŷ = w[0] * x[0] + w[1] * x[1] + ... + w[p] * x[p] + b > 0
 -	It looks similar to linear regression, but instead of returning the weighted sum of features, we threshold the predicted value at zero. If the function is smaller than zero, we predict the class –1; if it is larger than zero, we predict the class +1.
 - Outputs of logistic regression bounded by 0 and 1.
