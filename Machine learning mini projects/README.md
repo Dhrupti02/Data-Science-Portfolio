@@ -1,10 +1,18 @@
-### Language: Python >= 3.7
+#### Language
 
-### Library: Scikit
+```bash
+Python >= 3.7
+```
 
+#### Library
+
+```bash
+Scikit learn
+```
 
 Machine learning is a field concerned with building machine learning algorithms for predictive analysis purposes. The algorithms apply to data to predict the outcomes. The famous machine learning algorithms are:
 
+```bash
 •	Linear regression
 
 •	Logistic regression
@@ -24,7 +32,7 @@ Machine learning is a field concerned with building machine learning algorithms 
 •	Dimensionality reduction algorithms
 
 •	Gradient boosting algorithm and AdaBoosting algorithm
-
+```
 
 ### Linear regression:
 
