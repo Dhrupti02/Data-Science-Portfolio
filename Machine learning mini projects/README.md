@@ -1,3 +1,8 @@
+### Language: Python >= 3.7
+
+### Library: Scikit
+
+
 Machine learning is a field concerned with building machine learning algorithms for predictive analysis purposes. The algorithms apply to data to predict the outcomes. The famous machine learning algorithms are:
 
 •	Linear regression
@@ -95,3 +100,62 @@ A decision tree is simply a collection of if/then statements...
 **Cons:** 
 * only makes one pass through the data - once data is partitioned, you can revisit rows and exploit their predictive power!
 * might be too simple - unable to capture all of the nonlinearity that may be present.
+
+### Support Vector Machines:
+
+![image](https://user-images.githubusercontent.com/56231883/178104007-bf2ff90d-ffc3-4cdd-adfa-c7617cf35672.png)
+
+- The above graph shows how some dots are placed on the line. Meaning it is unable to differentiate to which class these dots belong.
+- To overcome this issue, a Support Vector Machine is used, which finds the hyperplane that maximizes the distance to the nearest point in each class.
+
+### Naive Bayes:
+
+- Naïve bayes classifier rely on bayes theorem. Naive Bayes uses for classification problems. It is an extremely fast and simple classification algorithm suitable for high-dimensional datasets.
+- The model is called naïve since we do not expect the features to be independent or even conditional on the class label. If the assumption is not true, it still works great.
+- The algorithm is efficient as they learn parameters by looking at each feature individually.
+
+### K Nearest Neighbor:
+
+- The KNN is an abbreviation of K Nearest Neighbor. There is no complex logic behind KNN. It is a simple model that does not require any complex mathematics. The only thing required in KNN is:
+
+   •	Some notion of distance
+   
+   •	An assumption is that points that are close to one another are similar
+   
+- The ideology behind KNN is to predict the new data point. The algorithm finds the point in the training set that is closest to the new point. Then it assigns the label of this training point to the new data point.
+- The K in Nearest Neighbor is instead of using only the closest neighbor, we can consider a fixed number k of neighbors in the training.
+
+
+### K-Means:
+
+- K-Means is a clustering algorithm. Clustering is an unsupervised technique where the labels of the data points are unknown.
+- Clustering is the task of dividing a dataset into groups, called clusters.
+- K-Means is the most commonly used clustering algorithm.
+- It tries to find cluster centers that are representative of certain regions of the data. The algorithm alternates between two steps: assigning each data point to the closest cluster center and then setting each cluster center as the mean of the data points that are assigned to it. The algorithm is finished when the assignment of instances to clusters no longer changes.
+
+
+### Random forest:
+
+- Random forest is ensembled of decision trees. The drawback of the decision tree is it overfits the training data. Random forest addresses this problem.
+- Random forest is a collection of decision trees where each tree is different from the others.
+
+![RF diagram](https://miro.medium.com/max/851/1*Mb8awDiY9T6rsOjtNTRcIg.png)
+
+-	A random forest simply fits many different decision trees and averages them together. Of course, what makes the random forest special are the components of randomness.
+
+#### Why is it called a random forest?
+
+Random Columns: this is shown in the documentation as `max_estimators` - so you are using a random subset of $n$ columns each time you build a tree - this is what makes the trees so different.
+
+- You can also BOOTSTRAP and choose a random subset of rows! This is true by default and you can check the documentation for more details.
+- Forest: this simply refers to the number of trees you select, this is known as `m_estimators` in the documentation.
+
+**Pros:** RF will typically be your #1 or #2 model - it is robust to outliers and is a great, intuitive model!
+ 
+**Cons:** can take some time to fit, categorical variables with many different values (especially rare ones) can be problematic, but this is true for most tree-based models.
+
+###	Dimensionality reduction algorithms:
+
+- In today's data world, a vast amount of data are being stored and analyzed. These data contain a lot of information, but the real challenge is identifying the useful variables.
+
+- Dimensionality reduction algorithms like Decision Tree, Factor Analysis, Missing Value Ratio, and Random Forest can help you find relevant details.
