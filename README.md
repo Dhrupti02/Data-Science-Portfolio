@@ -3,6 +3,8 @@ The repository contains data science projects I've done while learning and a lit
 
 So the very first question people ask is what is data science? Here is a brief introduction to data science that will help to interpret what data science is.
 
+I believe being a Data Scientist, only having technical and math skills is not enough. A little intuitive and investigative mind in the domain is as important as technical skills.
+
 **What is data science?**
 
 There is no perfect definition for data science. Data science is getting insights from real-world data using
