@@ -36,7 +36,7 @@ Machine learning is a field concerned with building machine learning algorithms 
 
 ### Linear regression:
 
-- Linear regression is a widely used algorithm. Linear models make a prediction using a linear function of the input features, which we will explain shortly.
+- Linear regression is a widely used algorithm. Linear models make a prediction using a linear function of the input features.
 - It is used when the predictor variable is continuous in nature. For regression, the general prediction formula for a linear model looks as follows: ŷ = w[0] * x[0] + w[1] * x[1] + ... + w[p] * x[p] + b
 - Here, x[0] to x[p] are features. w and b are parameters of the model that are learned, and ŷ is the prediction the model makes. Above is the function of multi-linear regression with multiple features.
 - If we simply see the equation
