@@ -1,5 +1,8 @@
-Language: Python 3
-Installation: Flask, Scikit learn
+**Language:** Python 3
+
+**Installation:** Flask, XGBoost
+
+**Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, statsmodels 
 
 **End-to-end data science projects**
 
