@@ -1,7 +1,7 @@
 
 ### Best books
 
-**For EDA:** 
+**EDA** 
 - storytelling with data a data visualization guide for business professionals by Cole Nussbaumer Knaflic
 - EFFECTIVE DATA STORYTELLING-How to Drive Change with Data, Narrative, and Visuals by Brent Dykes
 - Doing Data Science by Rachel Schutt and Cathy O’Neil
@@ -15,4 +15,13 @@
 - Introduction to Machine Learning with Python-A Guide for Data Scientists by Andreas C. Müller and Sarah Guido
 
 ### Blogs 
-### Videos
+- https://www.analyticsvidhya.com/
+- https://analyticsindiamag.com/
+- https://machinelearningmastery.com/
+
+### Online learning
+- Introduction to Computational Thinking and Data Science, MITx - 6.00.2x
+- Data Science: Machine Learning, HarvardX - PH125.8x
+- Using Python for Research, HarvardX - PH526x
+- Data Science: Probability, HarvardX - PH125.3x
+- Youtube: Krish Naik, StatQuest with Josh Starmer
