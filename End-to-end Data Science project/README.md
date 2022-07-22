@@ -92,5 +92,14 @@ For detailed explanation about missing values you can read blogs here,
   •	Another approach is quantile-based flooring and capping. In this technique, the outlier is capped at a certain value above the 90th percentile value or floored at a factor below the 10th percentile value.
   
   •	Another approach is Mean/Median imputation.
+  
+
+### Feature Encoding:
+- Data can be numerical and categorical.
+- We have to convert categorical data into numerical data.
+
+![image](https://user-images.githubusercontent.com/56231883/180364963-c13bc88d-d459-4659-903c-b3487ea75141.png)
+
+
 
 
